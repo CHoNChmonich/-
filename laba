@@ -1,0 +1,27 @@
+#1
+a=int(input())
+b=int(input())
+s=a*b
+print(s)
+#2
+import math
+d=int(input())
+l=d*math.pi
+print(l)
+#3
+a=int(input())
+b=int(input())
+c=(a+b)/2
+print(c)
+#4
+b=int(input())
+a=int(input())
+a=a**2
+b=b**2
+print(a+b,a-b,a*b,a/b)
+#5
+a=int(input())
+b=int(input())
+a=max(a,-a)
+b=max(b,-b)
+print(a+b,a-b,a*b,a/b)
