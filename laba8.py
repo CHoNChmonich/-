@@ -1,0 +1,37 @@
+#1
+n=int(input())
+print(n//1024)
+#2(отрезок включает концы или нет?
+# ( одна общая точка является наложением?-решу двумя вариантами
+#2.1
+a=int(input())
+b=int(input())
+print(a//b)
+#2.2
+a=int(input())
+b=int(input())
+if(a==b):
+    print(1)
+else:
+    if(a%b!=0):
+        print(a//b)
+    else:
+        print(a//b-1)
+#3
+a=int(input())
+b=int(input())
+while(a//b!=0):
+    a=a-b
+print(a)
+#4
+x=input()
+a=x[0]
+b=x[1]
+c=x[2]
+print(b+c+a)
+#5
+x=input()
+a=x[0]
+b=x[1]
+c=x[2]
+print(b+c+a)
