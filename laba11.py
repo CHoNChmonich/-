@@ -1,5 +1,7 @@
 #1
+print("Введите значение переменной а:",end="")
 a=int(input())
+print("Введите значение переменной b:",end="")
 b=int(input())
 if(a>b):
     b=a
@@ -8,53 +10,53 @@ elif(b>a):
 else:
     a=0
     b=0
+print("Значения переменных а и b:",end="")
 print(a,b)
 #2
+print("Введите значение для числа №1:",end="")
 a=int(input())
+print("Введите значение для числа №2:",end="")
 b=int(input())
+print("Введите значение для числа №3:",end="")
 c=int(input())
-m=0
-pm=0
-if(a>b)and(a>c):
-    m=a
-    if(b>c):
-        pm=b
-    else:
-        pm=c
-elif(b>a)and(b>c):
-    m=b
-    if(a>c):
-        pm=a
-    else:
-        pm=c
-elif(c>a)and(c>b):
-    m=c
-    if(a>b):
-        pm=a
-    else:
-        pm=b
-else:
-    m=a
-    pm=b
-print(m+pm)
+m=min(a,b,c)
+ans=a+b+c-m
+print("Сумма жвух максимальных чисел равна:".end="")
+print(ans)
 #3
+import math
+print("Введите значение координаты х для точки 1:",end="")
 a1=int(input())
+print("Введите значение координаты x для точки 2:",end="")
 b1=int(input())
+print("Введите значение координаты x для точки 3:",end="")
 c1=int(input())
+print("Введите значение координаты y для точки 1:",end="")
 a2=int(input())
+print("Введите значение координаты y для точки 2:",end="")
 b2=int(input())
+print("Введите значение координаты y для точки 3:",end="")
 c2=int(input())
 ac2=(a1-c1)**2+(a2-c2)**2
 ab2=(a1-b1)**2+(a2-b2)**2
-ac=ac2**0,5
-ab=ab2**0,5
+ac=math.sqrt(ac2)
+ab=math.sqrt(ab2)
+print("Ближайшая точка имеет координаты:",end="")
 if(ac>ab):
-    print(b1,b2,ab)
+    print(b1,b2)
+    print("а ее расстояние равно:",end="")
+    print(ab)
 else:
-    print(c1,c2,ac)
+    
+    print(c1,c2)
+    print("а ее расстояние равно:",end="")
+    print(ac)
 #4
+print("Введите значение координаты х для точки:",end="")
 x=int(input())
+print("Введите значение координаты y для точки:",end="")
 y=int(input())
+print("Точка находится в четверти номер:",end="")
 if(x*y>0):
     if(x>0)and(y>0):
         print("1")
@@ -66,6 +68,7 @@ else:
     else:
         print("4")
 #5
+print("Введите число")
 x=int(input())
 if(x>0):
     print("положительное",end=" ")
@@ -78,6 +81,7 @@ if(x%2==0)and(x!=0):
 if(x%2!=0):
     print("нечетное число")
 #6
+print("Введите число")
 x=int(input())
 def f(x):
     c=0
