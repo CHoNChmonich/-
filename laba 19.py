@@ -1,18 +1,23 @@
 #1
+print("Введите значение N:",end="")
 n=int(input())
 a=[]
+print("Заполните массив",n,"элементами:",end="")
 for i in range(n):
     a.append(int(input()))
 for i in range(1,n):
     if(a[i]==a[i-1]):
         a.pop(a[i])
+print("Измененный массив:")
 print(a)
 
 #2
+print("Введите значение N:",end="")
 n=int(input())
 a=[]
 b=[]
 c=[]
+print("Заполните массив",n,"элементами:",end="")
 for i in range(n):
     a.append(int(input()))
 for i in range(len(a)):
@@ -31,11 +36,13 @@ for i in range(len(c)):
     if(b[i]==2):
         a.remove(c[i])
         a.remove(c[i])
+print("Измененный массив:")
 print(a)
 #3
+print("Введите значение N:",end="")
 n=int(input())
 a=[]
-
+print("Заполните массив",n,"элементами:",end="")
 for i in range(n):
     a.append(int(input()))
 maxim=0
@@ -62,11 +69,14 @@ for i in range(n):
         c2=i
 a.insert(c1+1,0)
 a.insert(c2,0)
+print("Измененный массив:")
 print(a)
 #5
+print("Введите значение N:",end="")
 n=int(input())
 a=[]
 b=[]
+print("Заполните массив",n,"элементами:",end="")
 for i in range(n):
     a.append(int(input()))
 for i in range(n):
@@ -76,11 +86,14 @@ counter=0
 for i in range(len(b)):
     a.insert(b[i]+counter,0)
     counter+=1
+print("Измененный массив:")
 print(a)
 #4
+print("Введите значение N:",end="")
 n=int(input())
 a=[]
 b=[]
+print("Заполните массив",n,"элементами:",end="")
 for i in range(n):
     a.append(int(input()))
 for i in range(n):
@@ -90,6 +103,7 @@ counter=0
 for i in range(len(b)):
     a.insert(b[i]+1+counter,0)
     counter+=1
+print("Измененный массив:")
 print(a)
 
 
