@@ -20,10 +20,10 @@ n=int(input())
 flag=True
 for i in range(n):
     a.append(i)
-for i in range(1,n):
-    if(a[i]/a[i-1]==a[i+1]/a[i]):
+for i in range(1,n-1):
+    if(a[i]-a[i-1]==a[i+1]-a[i]):
         
-        ans=a[i]/a[i-1]
+        ans=a[i]-a[i-1]
     else:
         flag=False
         break
