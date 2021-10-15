@@ -31,14 +31,12 @@ for i in range(len(a)):
     if(a[i] not in c):
         c.append(a[i])
         b.append(counter)
-
-
-
-for i in range(len(c)):
+    
+for i in range(len(b)):
     if(b[i]==2):
         a.remove(c[i])
         a.remove(c[i])
-print("Измененный массив:")
+print(len(a))
 print(a)
 #3
 print("Введите значение N:",end="")
