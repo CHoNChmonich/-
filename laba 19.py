@@ -1,15 +1,17 @@
 #1
-print("Введите значение N:",end="")
+print("Введите значение N: ",end="")
 n=int(input())
 a=[]
-print("Заполните массив",n,"элементами:",end="")
+b=[]
+print("Заполните массив а ",n," элементами:")
 for i in range(n):
     a.append(int(input()))
-for i in range(1,n):
-    if(a[i]==a[i-1]):
-        a.pop(a[i])
-print("Измененный массив:")
-print(a)
+b.append(a[0])
+for i in range(1,len(a)):
+    if(a[i]!=a[i-1]):
+        b.append(a[i])
+print("Измененный массив а:")
+print(b)
 
 #2
 print("Введите значение N:",end="")
