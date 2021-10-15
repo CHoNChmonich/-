@@ -2,9 +2,11 @@
 def f(a,b):
     b=a**3
     return b
-print("Введите число А, а затем число B:",end="")
 
-print(f(int(input()),int(input())))
+for i in range(5):
+    print("Введите число А, а затем число B:",end="")
+    print(f(int(input()),int(input())))
+
 #2
 print("Введите значение числа A:",end="")
 a=int(input())
