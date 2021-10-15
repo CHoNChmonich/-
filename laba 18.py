@@ -41,11 +41,12 @@ for i in range(n):
 for i in reversed(range(n)):
     if(a[i]%2!=0):
         k=a[i]
+        break
 for i in range(n):
     if(a[i]%2!=0):
         a[i]=a[i]+k
 print("Изменненый массив:")
-print(a[i])
+print(a)
 #4
 print("Введите значение N:",end="")
 n=int(input())
