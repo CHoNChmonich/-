@@ -2,8 +2,9 @@
 a=[]
 print("Введите значение N:",end="")
 n=int(input())
+print("Заполните массив а ,",n," элементами")
 for i in range(n):
-    a.append(i)
+    a.append(int(input()))
 print("Введите значение K:",end="")
 k=int(input())
 print("Введите значение L:",end="")
@@ -18,8 +19,9 @@ a=[]
 print("Введите значение N:",end="")
 n=int(input())
 flag=True
+print("заполните массив а ",n," элементами")
 for i in range(n):
-    a.append(i)
+    a.append(int(input()))
 for i in range(1,n-1):
     if(a[i]-a[i-1]==a[i+1]-a[i]):
         
@@ -37,6 +39,7 @@ flag=False
 minim=0
 print("Введите значение N:",end="")
 n=int(input())
+print("Заполните массив а ",n," элементами")
 for i in range(n):
     a.append(int(input()))
 for i in range(2,n,2):
@@ -51,6 +54,7 @@ print(minim)
 maxim=0
 print("Введите значение N:",end="")
 n=int(input())
+print("Заполните массив а ",n," элементами")
 a=[]
 for i in range(n):
     a.append(int(input()))
@@ -66,6 +70,7 @@ n=int(input())
 a=[]
 n1=0
 n2=0
+print("Заполните массив а ",n," элементами")
 for i in range(n):
     a.append(int(input()))
 for i in range(n):
