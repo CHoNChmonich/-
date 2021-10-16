@@ -4,24 +4,28 @@ n=int(input())
 a=[]
 b=[]
 for i in range(n):
-    a.append(i)
-    b.append(n-1-i)
+    print("элемент в массив а:")
+    a.append(int(input()))
+    print("элемент в массив b:")
+    b.append(int(input()))
 m=[0]*n
 for i in range(n):
     m[i]=a[i]
 for i in range(n):
     a[i]=b[i]
     b[i]=m[i]
-print("Вывод массивов:")
+print("Вывод массивa a:")
 print(a)
+print("вывод массива b:")
 print(b)
 #2
 print("Введите значение N:",end="")
 n=int(input())
 a=[]
 b=[0]*n
+print("заполните массив а ",n," элементами")
 for i in range(n):
-    a.append(i)
+    a.append(int(input()))
 for i in range(n):
     s=0
     k=0
@@ -36,8 +40,9 @@ print("ВВедите значение N:",end="")
 n=int(input())
 a=[]
 k=0
+print("заполните массив а ",n," элементами")
 for i in range(n):
-    a.append(i)
+    a.append(int(input()))
 for i in reversed(range(n)):
     if(a[i]%2!=0):
         k=a[i]
