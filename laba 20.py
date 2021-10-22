@@ -65,11 +65,20 @@ for i in range(1,n):
         j+=1
         b.append(1)
         c.append(a[i])
-b[j],b[k]=b[k],b[j]
-c[j],c[k]=c[k],c[j]
 print(a)
 print(b)
 print(c)
+c[k-1],c[j]=c[j],c[k-1]
+b[k-1],b[j]=b[j],b[k-1]
+l=[]
+for i in range(len(c)):
+    for j in range(b[i]):
+        l.append(c[i])
+
+print(a)
+print(b)
+print(c)
+print(l)
 #4
 n=int(input())
 ans=[0]*2
