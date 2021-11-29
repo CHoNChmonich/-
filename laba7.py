@@ -52,5 +52,29 @@ elif(a==0):
     print("Решений нет")
 else:
     print(b/a)
-#5
+#6
+print("Введите значение коэф. А1:")
+a1=int(input())
+print("Введите значение коэф. B1:")
+b1=int(input())
+print("Введите значение коэф. C1:")
+c1=int(input())
+print("Введите значение коэф. А2:")
+a2=int(input())
+print("Введите значение коэф. B2:")
+b2=int(input())
+print("Введите значение коэф. C2:")
+c2=int(input())
+det=a1*b2-a2*b1
+det1=c1*b2-b1*c2
+det2=a1*c2-c1*a2
+if(det==0)and(det1!=0 or det2!=0):
+    print("Нет решений")
+elif(det==0)and(det1==0)and(det2==0):
+    print("Бесконечное кол-во решений")
+else:
+    x=det1//det
+    y=det2//det
+    print("x=",x,"y=",y)
+
 
